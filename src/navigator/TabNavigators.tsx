@@ -3,7 +3,7 @@ import HomeScreen from '../screens/HomeScreen';
 import SearchScreen from '../screens/SearchScreen';
 import TicketScreen from '../screens/TicketScreen';
 import AccountScreen from '../screens/AccountScreen';
-import {COLORS, FONTSIZE, SPACING} from '../theme/theme';
+import {BORDERRADIUS, COLORS, FONTSIZE, SPACING} from '../theme/theme';
 import CustomIcons from '../components/CustomIcons';
 import {StyleSheet, View} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
@@ -18,9 +18,12 @@ const TabNavigator = () => {
         tabBarHideOnKeyboard: true,
         headerShown: false,
         tabBarStyle: {
-          backgroundColor: COLORS.Black,
+          backgroundColor: COLORS.Grey,
           borderTopWidth: 0,
           height: SPACING.space_10 * 10,
+          marginBottom: SPACING.space_20,
+          marginHorizontal: SPACING.space_16,
+          borderRadius: BORDERRADIUS.radius_20 * 2,
         },
       }}>
       <Tab.Screen
