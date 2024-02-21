@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     fontFamily: FONTFAMILY.poppins_semibold,
     fontSize: FONTSIZE.size_20,
     color: COLORS.White,
-    paddingHorizontal: SPACING.space_36,
+    paddingHorizontal: SPACING.space_32,
     paddingVertical: SPACING.space_28,
   },
 });

@@ -100,10 +100,10 @@ const HomeScreen = ({navigation}: any) => {
     upcomingMoviesList == null
   ) {
     return (
-      <SafeAreaView style={styles.container}>
-        <ScrollView
-          bounces={false}
-          contentContainerStyle={styles.scrollViewContainer}>
+      <ScrollView
+        bounces={false}
+        contentContainerStyle={styles.scrollViewContainer}>
+        <SafeAreaView style={styles.container}>
           <StatusBar hidden />
 
           <View style={styles.InputHeaderContainer}>
@@ -112,13 +112,13 @@ const HomeScreen = ({navigation}: any) => {
           <View style={styles.loadingContainer}>
             <ActivityIndicator size={'large'} color={COLORS.Orange} />
           </View>
-        </ScrollView>
-      </SafeAreaView>
+        </SafeAreaView>
+      </ScrollView>
     );
   }
   return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView bounces={false}>
+    <ScrollView bounces={false}>
+      <SafeAreaView style={styles.container}>
         <StatusBar hidden />
         <View style={styles.InputHeaderContainer}>
           <InputHeader searchFunction={searchMoviesFunction} />
@@ -128,7 +128,6 @@ const HomeScreen = ({navigation}: any) => {
           data={nowPlayingMoviesList}
           keyExtractor={(item: any) => item.id}
           horizontal
-          decelerationRate={1}
           contentContainerStyle={styles.containerGap36}
           renderItem={({item, index}) => {
             if (!item.original_title) {
@@ -168,7 +167,7 @@ const HomeScreen = ({navigation}: any) => {
             <SubMovieCard
               shouldMarginatedAtEnd={true}
               cardFunction={() => {
-                navigation.push('MovieDetails', {movieId: item.id});
+                navigation.push('MovieDetails', {movieid: item.id});
               }}
               cardWidth={width / 3}
               isFirst={index == 0 ? true : false}
@@ -188,7 +187,7 @@ const HomeScreen = ({navigation}: any) => {
             <SubMovieCard
               shouldMarginatedAtEnd={true}
               cardFunction={() => {
-                navigation.push('MovieDetails', {movieId: item.id});
+                navigation.push('MovieDetails', {movieid: item.id});
               }}
               cardWidth={width / 3}
               isFirst={index == 0 ? true : false}
@@ -198,8 +197,8 @@ const HomeScreen = ({navigation}: any) => {
             />
           )}
         />
-      </ScrollView>
-    </SafeAreaView>
+      </SafeAreaView>
+    </ScrollView>
   );
 };
 
