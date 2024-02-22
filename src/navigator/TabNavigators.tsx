@@ -102,7 +102,7 @@ const TabNavigator = () => {
             },
           }}
         />
-        <Tab.Screen
+        {/* <Tab.Screen
           name="Account"
           component={AccountScreen}
           options={{
@@ -123,7 +123,7 @@ const TabNavigator = () => {
               );
             },
           }}
-        />
+        /> */}
       </Tab.Navigator>
     </View>
   );
