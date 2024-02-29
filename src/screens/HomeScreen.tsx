@@ -100,10 +100,10 @@ const HomeScreen = ({navigation}: any) => {
     upcomingMoviesList == null
   ) {
     return (
-      <ScrollView
-        bounces={false}
-        contentContainerStyle={styles.scrollViewContainer}>
-        <SafeAreaView style={styles.container}>
+      <View style={styles.container}>
+        <ScrollView
+          bounces={false}
+          contentContainerStyle={styles.scrollViewContainer}>
           <StatusBar hidden />
 
           <View style={styles.InputHeaderContainer}>
@@ -112,13 +112,13 @@ const HomeScreen = ({navigation}: any) => {
           <View style={styles.loadingContainer}>
             <ActivityIndicator size={'large'} color={COLORS.Orange} />
           </View>
-        </SafeAreaView>
-      </ScrollView>
+        </ScrollView>
+      </View>
     );
   }
   return (
-    <ScrollView bounces={false}>
-      <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
+      <ScrollView bounces={false}>
         <StatusBar hidden />
         <View style={styles.InputHeaderContainer}>
           <InputHeader searchFunction={searchMoviesFunction} />
@@ -197,8 +197,8 @@ const HomeScreen = ({navigation}: any) => {
             />
           )}
         />
-      </SafeAreaView>
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 };
 

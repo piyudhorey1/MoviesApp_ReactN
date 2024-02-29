@@ -19,13 +19,13 @@ const TabNavigator = () => {
           tabBarHideOnKeyboard: true,
           headerShown: false,
           tabBarStyle: {
-            backgroundColor: COLORS.Grey,
+            backgroundColor: COLORS.Black,
             borderTopWidth: 0,
             height: SPACING.space_10 * 10,
-            marginBottom: SPACING.space_20,
-            marginHorizontal: SPACING.space_16,
             paddingHorizontal: SPACING.space_10,
             borderRadius: BORDERRADIUS.radius_20 * 2,
+            alignSelf: 'center',
+            width: '80%',
             ...Platform.select({
               ios: {
                 paddingBottom: 0,
@@ -135,7 +135,7 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.Black,
   },
   activeTabBackground: {
-    backgroundColor: COLORS.Black,
+    backgroundColor: COLORS.Grey,
     padding: SPACING.space_20,
     borderRadius: SPACING.space_18 * 10,
   },

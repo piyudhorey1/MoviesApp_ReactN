@@ -32,7 +32,7 @@ const InputHeader = (props: any) => {
         <CustomIcons
           name="search"
           color={COLORS.Orange}
-          size={FONTSIZE.size_14}
+          size={FONTSIZE.size_18}
         />
       </TouchableOpacity>
     </View>
@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
     borderColor: COLORS.WhiteRGBA15,
     borderRadius: BORDERRADIUS.radius_25,
     flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   textInput: {
     width: '90%',
@@ -58,7 +59,7 @@ const styles = StyleSheet.create({
   customIcon: {
     alignItems: 'center',
     justifyContent: 'center',
-    padding: SPACING.space_10,
+    paddingVertical: SPACING.space_10,
   },
 });
 
