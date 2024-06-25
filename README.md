@@ -1,4 +1,4 @@
-![Screenshot_20240624-212429_MovieBookingApp](https://github.com/piyudhorey1/MoviesApp_ReactN/assets/66564924/909b1d1c-f9f1-4560-92ce-8dfd2a8fb659)
+![Screenshot_20240624-212429_MovieBookingApp](https://github.com/piyudhorey1/MoviesApp_ReactN/assets/66564924/909b1d1c-f9f1-4560-92ce-8dfd2a8fb659) {:style= height: 83px}
 ![Screenshot_20240624-212413_MovieBookingApp](https://github.com/piyudhorey1/MoviesApp_ReactN/assets/66564924/5624ad5f-f84d-463c-a529-81d7865c5957)
 ![Screenshot_20240624-212350_MovieBookingApp](https://github.com/piyudhorey1/MoviesApp_ReactN/assets/66564924/bb711c7d-e416-44ce-ae1f-7abb93c4e7bf)
 ![Screenshot_20240624-212615_MovieBookingApp](https://github.com/piyudhorey1/MoviesApp_ReactN/assets/66564924/ef6d37bb-4030-4131-917e-207d9a621dc6)
